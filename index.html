@@ -65,10 +65,11 @@
 
   /* credibility strip */
   .cred{border-block:1px solid var(--line);background:var(--bg2)}
-  .cred .wrap{padding-block:26px;display:flex;flex-direction:column;gap:16px;align-items:center}
+  .cred .wrap{padding-block:34px;display:flex;flex-direction:column;gap:20px;align-items:center}
   .cred .t{font-size:13px;color:var(--muted);letter-spacing:.08em;text-transform:uppercase;font-weight:700}
-  .cred .items{display:flex;flex-wrap:wrap;gap:12px 14px;justify-content:center}
-  .cred .items span{font-size:14.5px;font-weight:700;color:var(--ink);background:var(--card);border:1px solid var(--line);padding:10px 18px;border-radius:12px}
+  .cred .items{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;align-items:stretch}
+  .cred .items span{display:inline-flex;align-items:center;gap:10px;font-size:15px;font-weight:700;color:var(--ink);background:var(--card);border:1px solid var(--line);padding:14px 22px;border-radius:999px;line-height:1}
+  .cred .items span::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--gold);flex-shrink:0}
 
   section{padding-block:92px}
   .sec-head{max-width:44ch;margin-bottom:44px}
@@ -102,10 +103,10 @@
 
   /* about bruno */
   .about{background:var(--bg2);border-block:1px solid var(--line)}
-  .about-grid{display:grid;grid-template-columns:330px 1fr;gap:56px;align-items:center}
-  .about-photo{justify-self:center;position:relative}
-  .about-photo img{width:290px;height:auto;display:block;border-radius:22px;position:relative;z-index:1}
-  .about-photo::after{content:"";position:absolute;inset:auto -16px -16px 26px;height:92%;border-radius:22px;background:var(--gold-soft);border:1px solid var(--line2);z-index:0}
+  .about-grid{display:grid;grid-template-columns:340px 1fr;gap:60px;align-items:center}
+  .about-photo{justify-self:center;position:relative;width:290px}
+  .about-photo img{width:100%;height:auto;display:block;border-radius:20px;position:relative;z-index:1}
+  .about-photo::after{content:"";position:absolute;inset:18px -18px -18px 18px;border-radius:20px;background:var(--gold-soft);border:1px solid var(--line2);z-index:0}
   .about h2{font-size:clamp(28px,3.8vw,40px);margin:12px 0 6px}
   .about .role{font-size:15.5px;font-weight:700;color:var(--gold);margin-bottom:18px}
   .about p{color:var(--muted);font-size:17.5px;margin-bottom:22px;max-width:52ch;font-weight:500}
