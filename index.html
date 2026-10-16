@@ -16,6 +16,7 @@
   .wrap{max-width:1180px;margin:0 auto;padding:0 28px}
   h1,h2,h3{margin:0;font-weight:800;letter-spacing:-.02em;line-height:1.05}
   p{margin:0}a{color:inherit;text-decoration:none}
+  ::selection{background:rgba(212,162,78,.32);color:#fff}
   .serif{font-family:"Playfair Display",Georgia,serif;font-style:italic;font-weight:600;letter-spacing:-.01em}
   .lab{display:inline-block;font-size:13px;font-weight:700;letter-spacing:.06em;color:var(--gold);text-transform:uppercase}
   .lab::before{content:"/ "}
@@ -64,11 +65,11 @@
   .cover-img:hover{transform:scale(1.03) rotate(0)!important;animation-play-state:paused}
 
   /* credibility strip */
-  .cred{border-block:1px solid var(--line);background:var(--bg2)}
-  .cred .wrap{padding-block:34px;display:flex;flex-direction:column;gap:20px;align-items:center}
-  .cred .t{font-size:13px;color:var(--muted);letter-spacing:.08em;text-transform:uppercase;font-weight:700}
-  .cred .items{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;align-items:stretch}
-  .cred .items span{display:inline-flex;align-items:center;gap:10px;font-size:15px;font-weight:700;color:var(--ink);background:var(--card);border:1px solid var(--line);padding:14px 22px;border-radius:999px;line-height:1}
+  .cred{background:transparent}
+  .cred .wrap{padding-block:14px 12px;display:flex;flex-direction:column;gap:18px;align-items:center}
+  .cred .t{font-size:12.5px;color:var(--muted);letter-spacing:.1em;text-transform:uppercase;font-weight:700}
+  .cred .items{display:flex;flex-wrap:wrap;gap:10px 28px;justify-content:center;align-items:center}
+  .cred .items span{display:inline-flex;align-items:center;gap:10px;font-size:15.5px;font-weight:700;color:var(--ink);line-height:1}
   .cred .items span::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--gold);flex-shrink:0}
 
   section{padding-block:92px}
